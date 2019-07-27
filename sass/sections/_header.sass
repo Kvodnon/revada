@@ -1,0 +1,128 @@
+.header
+  &-wrap
+    display: flex
+    align-items: center
+  &-buttons
+    display: flex
+    margin-left: auto
+  &__logo
+    flex-basis: 180px
+    margin-right: 30px
+  &-image
+    max-width: 100%
+  &-email
+    padding-left: 40px
+    padding-right: 15px
+
+    text-transform: lowercase
+
+    border-right: 1px solid #ffffff
+  &-button
+    padding-top: 35px
+    padding-bottom: 30px
+
+    color: #ffffff
+  &-phone
+    padding-left: 50px
+    padding-right: 30px
+
+    font-size: 16px
+    font-weight: bold
+    letter-spacing: 0.32px
+  &-call
+    padding: 0 40px
+    color: $base-color
+  &-link
+    display: block
+    opacity: 0.54
+    color: #565759
+    font-weight: 300
+    line-height: 20px
+    letter-spacing: 0.7px
+    text-decoration: none
+    &:hover
+      color: $navbar-link-color
+.navbar
+  &-wrap
+    display: flex
+  &-list
+    flex-basis: 680px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 70px
+    margin: 0
+    padding-left: 65px
+    padding-right: 90px
+
+    list-style: none
+
+    background-color: $gray
+  &-link
+    font-size: 16px
+    text-decoration: none
+
+    color: #343638
+    &:hover
+      color: $blue-color
+  &-select
+    font-size: 16px
+    letter-spacing: 0.32px
+
+    border: none
+    color: $blue-color
+  &__select
+    margin-right: 25px
+    margin-left: auto
+.burger
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  width: 84px
+  min-height: 78px
+
+  background-color: $blue-color
+  &-line
+    width: 31px
+    height: 2px
+    margin-bottom: 10px
+
+    background-color: #ffffff
+    &:last-child
+      margin-bottom: 0
+
+@media (max-width: 1320px)
+  .header
+    &-email
+      display: none
+    &-wrap
+      justify-content: space-between
+  .navbar
+    &-list
+      padding-left: 0
+      padding-right: 65px
+@media (min-width: 1001px)
+  .burger
+    display: none
+
+@media (max-width: 1000px)
+  .header
+    &-logo
+      margin-right: 0
+    &-custom,
+    &-buttons
+      display: none
+  .navbar
+      display: none
+@media (max-width: 425px)
+  .header
+    &-logo
+      flex-basis: 120px
+  .burger
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 56px
+    min-height: 52px
