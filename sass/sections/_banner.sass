@@ -1,0 +1,47 @@
+.banner
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-right
+    margin-right: -109px
+  &__headline
+    margin-top: 0
+  &-subtitle
+    display: block
+    max-width: 265px
+    height: 44px
+    margin: 30px 0 40px
+
+    font-size: 20px
+    font-weight: 300
+    line-height: 24px
+    letter-spacing: 0.4px
+  &__button
+    padding-left: 40px
+    padding-right: 40px
+@media (min-width: 1321px)
+  .banner
+    &__container
+      overflow: hidden
+@media (max-width: 1320px)
+  .banner
+    overflow: hidden
+    &__headline
+      max-width: 395px
+    &-right
+      margin-right: -334px
+@media (max-width: 1000px)
+  .banner
+    padding-top: 80px
+    &__headline
+      max-width: 315px
+    &-right
+      margin-right: -425px
+@media (max-width: 425px)
+  .banner
+    padding-top: 235px
+    &-right
+      display: none
+    &__headline
+      max-width: 295px

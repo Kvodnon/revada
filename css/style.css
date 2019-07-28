@@ -77,6 +77,37 @@ body {
   background-color: #00aae7;
 }
 
+.headline {
+  max-width: 420px;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.padding-left {
+  padding-left: 65px;
+}
+
+@media (max-width: 1320px) {
+  .headline {
+    font-size: 40px;
+  }
+  .padding-left {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headline {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 425px) {
+  .headline {
+    font-size: 32px;
+  }
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,6 +245,10 @@ body {
   color: #ffffff;
 }
 
+.navbar-link_active {
+  color: #00aae7;
+}
+
 .navbar-inner-mobile {
   margin-top: 20px;
   padding-left: 10px;
@@ -339,6 +374,84 @@ body {
             flex-direction: column;
     width: 55px;
     min-height: 50px;
+  }
+}
+
+.banner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner-right {
+  margin-right: -109px;
+}
+
+.banner__headline {
+  margin-top: 0;
+}
+
+.banner-subtitle {
+  display: block;
+  max-width: 265px;
+  height: 44px;
+  margin: 30px 0 40px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.banner__button {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (min-width: 1321px) {
+  .banner__container {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1320px) {
+  .banner {
+    overflow: hidden;
+  }
+  .banner__headline {
+    max-width: 395px;
+  }
+  .banner-right {
+    margin-right: -334px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    padding-top: 80px;
+  }
+  .banner__headline {
+    max-width: 315px;
+  }
+  .banner-right {
+    margin-right: -425px;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner {
+    padding-top: 235px;
+  }
+  .banner-right {
+    display: none;
+  }
+  .banner__headline {
+    max-width: 295px;
   }
 }
 /*# sourceMappingURL=style.css.map */
