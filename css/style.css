@@ -80,7 +80,8 @@ body {
 .headline {
   max-width: 420px;
   font-size: 45px;
-  font-weight: 300;
+  font-weight: normal;
+  font-family: 'TT Norms Light', sans-serif;
 }
 
 .padding-left {
@@ -152,7 +153,7 @@ body {
   padding-left: 50px;
   padding-right: 30px;
   font-size: 16px;
-  font-weight: bold;
+  font-family: 'TT Norms Bold', sans-serif;
   letter-spacing: 0.32px;
 }
 
@@ -163,9 +164,8 @@ body {
 
 .header-link {
   display: block;
-  opacity: 0.54;
-  color: #565759;
-  font-weight: 300;
+  color: rgba(86, 87, 89, 0.54);
+  font-family: 'TT Norms Light', sans-serif;
   line-height: 20px;
   letter-spacing: 0.7px;
   text-decoration: none;
@@ -182,8 +182,8 @@ body {
 }
 
 .navbar-list {
-  -ms-flex-preferred-size: 835px;
-      flex-basis: 835px;
+  -ms-flex-preferred-size: 830px;
+      flex-basis: 830px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +209,7 @@ body {
 }
 
 .navbar-list-mobile > .navbar-item-mobile {
-  font-weight: bold;
+  font-family: 'TT Norms Bold', sans-serif;
 }
 
 .navbar-item-mobile {
@@ -252,7 +252,7 @@ body {
 .navbar-inner-mobile {
   margin-top: 20px;
   padding-left: 10px;
-  font-weight: 400;
+  font-family: 'TT Norms Regular', sans-serif;
   list-style-type: none;
 }
 
@@ -403,7 +403,7 @@ body {
   height: 44px;
   margin: 30px 0 40px;
   font-size: 20px;
-  font-weight: 300;
+  font-family: 'TT Norms Light', sans-serif;
   line-height: 24px;
   letter-spacing: 0.4px;
 }

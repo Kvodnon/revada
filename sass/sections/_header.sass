@@ -28,16 +28,15 @@
     padding-right: 30px
 
     font-size: 16px
-    font-weight: bold
+    +bold
     letter-spacing: 0.32px
   &-call
     padding: 0 40px
     color: $base-color
   &-link
     display: block
-    opacity: 0.54
-    color: #565759
-    font-weight: 300
+    color: rgba(#565759, 0.54)
+    +light
     line-height: 20px
     letter-spacing: 0.7px
     text-decoration: none
@@ -47,7 +46,7 @@
   &-wrap
     display: flex
   &-list
-    flex-basis: 835px
+    flex-basis: 830px
     display: flex
     justify-content: space-between
     align-items: center
@@ -68,7 +67,7 @@
       list-style-type: none
     &-mobile >
       .navbar-item-mobile
-        font-weight: bold
+        +bold
   &-item
     &-mobile
       margin-bottom: 20px
@@ -99,7 +98,7 @@
     &-mobile
       margin-top: 20px
       padding-left: 10px
-      font-weight: 400
+      +regular
 
       list-style-type: none
   &-select
