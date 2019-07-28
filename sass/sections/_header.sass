@@ -15,6 +15,7 @@
     padding-right: 15px
 
     text-transform: lowercase
+    letter-spacing: 0.1px
 
     border-right: 1px solid #ffffff
   &-button
@@ -46,7 +47,7 @@
   &-wrap
     display: flex
   &-list
-    flex-basis: 680px
+    flex-basis: 835px
     display: flex
     justify-content: space-between
     align-items: center
@@ -55,9 +56,30 @@
     padding-left: 65px
     padding-right: 90px
 
-    list-style: none
+    list-style-type: none
 
     background-color: $gray
+    &-mobile
+      margin: 0
+      padding: 20px 0
+
+      text-decoration: none
+
+      list-style-type: none
+    &-mobile >
+      .navbar-item-mobile
+        font-weight: bold
+  &-item
+    &-mobile
+      margin-bottom: 20px
+
+      text-transform: uppercase
+      &:last-child
+        margin-bottom: 0
+      &-level2 .navbar-inner-mobile
+        padding-left: 20px
+      &-level3 .navbar-link-mobile
+        text-transform: capitalize
   &-link
     font-size: 16px
     text-decoration: none
@@ -65,12 +87,29 @@
     color: #343638
     &:hover
       color: $blue-color
+    &-mobile
+      display: block
+
+      text-decoration: none
+      
+      color: #ffffff
+  &-inner
+    &-mobile
+      margin-top: 20px
+      padding-left: 10px
+      font-weight: 400
+
+      list-style-type: none
   &-select
     font-size: 16px
     letter-spacing: 0.32px
 
     border: none
     color: $blue-color
+    background-color: #ffffff
+
+    outline: none
+    cursor: pointer
   &__select
     margin-right: 25px
     margin-left: auto
@@ -79,12 +118,17 @@
   justify-content: center
   align-items: center
   flex-direction: column
-  width: 84px
-  min-height: 78px
+  width: 85px
+  min-height: 80px
+
+  border: none
+
+  outline: none
+  cursor: pointer
 
   background-color: $blue-color
   &-line
-    width: 31px
+    width: 30px
     height: 2px
     margin-bottom: 10px
 
@@ -100,21 +144,33 @@
       justify-content: space-between
   .navbar
     &-list
+      flex-basis: 745px
       padding-left: 0
       padding-right: 65px
 @media (min-width: 1001px)
   .burger
     display: none
-
+  .navbar-list-mobile
+    display: none
 @media (max-width: 1000px)
   .header
+    position: fixed
+
+    width: 100%
     &-logo
       margin-right: 0
     &-custom,
     &-buttons
       display: none
   .navbar
+    display: none
+
+    background-color: $blue-color
+    &-list,
+    &-select
       display: none
+    &-item-mobile
+      color: #ffffff
 @media (max-width: 425px)
   .header
     &-logo
@@ -124,5 +180,5 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    width: 56px
-    min-height: 52px
+    width: 55px
+    min-height: 50px
